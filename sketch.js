@@ -14,7 +14,7 @@ let game_state = 0;
 class Snake {
   constructor() {
 	this.alive = true;
-	this.maxLength = 3;
+	this.maxLength = 166;
 	this.body = [
 	  {x: 1, y: 5},
       {x: 2, y: 5},
@@ -154,7 +154,7 @@ function draw() {
   text('🐍 ' + (score +3) +'           🍎 ' + score, 0, HEIGHT, width);
 
  
-  snake.checkCollision();
+//   snake.checkCollision();
   snake.move();  
   snake.draw();
   
